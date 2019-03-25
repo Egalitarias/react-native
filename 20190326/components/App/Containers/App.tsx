@@ -1,7 +1,6 @@
-import React, { Component } from "react";
+import React, { Component, ErrorInfo } from "react";
 import { Button, StyleSheet, Text, View } from "react-native";
-import { SetButton, Padding, WelcomeText } from "../Components";
-import { string } from "prop-types";
+import { LifeCycle, SetButton, Padding, WelcomeText } from "../Components";
 
 const instructions = "Shake for dev menu";
 
@@ -54,6 +53,24 @@ export default class App extends Component<Props> {
     this.setState({ message: "Get pressed" });
   };
 
+  constructorHandler = () => {
+    console.log("constructorHandler");
+  };
+
+  componentDidMountHandler = () => {
+    console.log("componentDidMountHandler");
+  };
+
+  componentDidCatchHandler = (error: Error, info: ErrorInfo) => {
+    console.log("componentDidCatchHandler");
+    console.log(error.message);
+    //console.log(info.componentStack);
+  };
+
+  componentWillReceiveProps = () => {
+    console.log("componentWillReceiveProps");
+  };
+
   render() {
     return (
       <View style={styles.container}>
@@ -72,6 +89,12 @@ export default class App extends Component<Props> {
         <Button title="Get" onPress={this.getButtonOnPress} />
         <Padding />
         <Text>{this.state.message}</Text>
+        <LifeCycle
+          constructorHandler={this.constructorHandler}
+          componentDidMountHandler={this.componentDidMountHandler}
+          componentDidCatchHandler={this.componentDidCatchHandler}
+          componentWillReceiveProps={this.componentWillReceiveProps}
+        />
       </View>
     );
   }
