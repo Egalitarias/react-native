@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, View } from "react-native";
-import { WelcomeText } from "../Components";
+import { Button, StyleSheet, Text, View } from "react-native";
+import { SetButton, WelcomeText } from "../Components";
+import { string } from "prop-types";
 
 const instructions = "Shake for dev menu";
 
@@ -41,6 +42,18 @@ const StyledText = (props: StyledTextProps) => {
 
 type Props = {};
 export default class App extends Component<Props> {
+  state = {
+    message: ""
+  };
+
+  setButtonOnPress = () => {
+    this.setState({ message: "Set pressed" });
+  };
+
+  getButtonOnPress = () => {
+    this.setState({ message: "Get pressed" });
+  };
+
   render() {
     return (
       <View style={styles.container}>
@@ -51,6 +64,9 @@ export default class App extends Component<Props> {
         <WelcomeText>Welcome to React Native!</WelcomeText>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
+        <SetButton setButtonOnPress={this.setButtonOnPress} />
+        <Button title="Get" onPress={this.getButtonOnPress} />
+        <Text>{this.state.message}</Text>
       </View>
     );
   }
