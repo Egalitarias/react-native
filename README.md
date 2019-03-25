@@ -22,4 +22,9 @@ cd /src/github/egalitarias/react-native/20190326/basic
 ../../bin/androidStartMetro.sh
 ```
 
+Open another terminal, run the project
+```
+cd /src/github/egalitarias/react-native/20190326/basic
+react-native run-android
+```
 
