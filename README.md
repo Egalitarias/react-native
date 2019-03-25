@@ -2,7 +2,7 @@
 
 ## Components (26th March 2019) ##
 
-Checkout the [gitbub repo](https://github.com/Egalitarias/react-native.git)
+Checkout the [github repo](https://github.com/Egalitarias/react-native.git)
 
 Open a terminal, run yarn install to install the dependencies
 ```
