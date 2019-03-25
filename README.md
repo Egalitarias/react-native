@@ -51,3 +51,10 @@ Structuring components, index.ts
 export * from "./WelcomeText";
 export * from "./InstructionText";
 ```
+
+Passing a handler to a component using props
+```
+type Props = {
+  setButtonOnPress: () => void;
+};
+```
