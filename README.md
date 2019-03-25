@@ -14,6 +14,11 @@ yarn install
 ../../bin/androidStartMetro.sh
 ```
 
+Open another terminal, run logcat
+```
+adb logcat | grep ReactNativeJS
+```
+
 Open another terminal, run the project
 ```
 cd /src/github/egalitarias/react-native/20190326/basic
