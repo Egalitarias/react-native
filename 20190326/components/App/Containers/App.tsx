@@ -61,7 +61,9 @@ export default class App extends Component<Props> {
         <SomeText text="A line of text" />
         <BigText text="A line of text with bigger font" fontSize={30} />
         <StyledText text="Styled text" style={{ fontSize: 40 }} />
-        <WelcomeText>Welcome to React Native!</WelcomeText>
+        <WelcomeText style={styles.welcome}>
+          Welcome to React Native!
+        </WelcomeText>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
         <Padding />

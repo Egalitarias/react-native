@@ -1,17 +1,11 @@
 import React, { Component } from "react";
-import { StyleSheet, Text } from "react-native";
+import { Text, TextStyle } from "react-native";
 
-type Props = {};
+interface Props {
+  style: TextStyle;
+}
 export class WelcomeText extends Component<Props> {
   render() {
-    return <Text style={styles.welcome}>{this.props.children}</Text>;
+    return <Text style={this.props.style}>{this.props.children}</Text>;
   }
 }
-
-const styles = StyleSheet.create({
-  welcome: {
-    fontSize: 20,
-    textAlign: "center",
-    margin: 10
-  }
-});
