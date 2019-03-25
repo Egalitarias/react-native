@@ -44,6 +44,22 @@ export class Padding extends Component {
 }
 ```
 
+Component with styling props
+
+```
+import React, { Component } from "react";
+import { Text, TextStyle } from "react-native";
+
+interface Props {
+  style: TextStyle;
+}
+export class WelcomeText extends Component<Props> {
+  render() {
+    return <Text style={this.props.style}>{this.props.children}</Text>;
+  }
+}
+```
+
 ### Code Snippets ###
 
 Structuring components, index.ts
