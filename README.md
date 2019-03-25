@@ -54,7 +54,7 @@ export * from "./InstructionText";
 
 Passing a handler to a component using props
 ```
-type Props = {
+interface Props {
   setButtonOnPress: () => void;
-};
+}
 ```
