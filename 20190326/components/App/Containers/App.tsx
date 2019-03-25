@@ -3,11 +3,26 @@ import { Platform, StyleSheet, Text, View } from "react-native";
 
 const instructions = "Shake for dev menu";
 
+// Functional Component (no props, no state)
+const Version = () => {
+  return <Text>Version 1.0.1</Text>;
+};
+
+// Functional Component (with props, no state)
+type SomeTextProps = {
+  text: string;
+};
+const SomeText = (props: SomeTextProps) => {
+  return <Text>{props.text}</Text>;
+};
+
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
+        <Version />
+        <SomeText text="A line of text" />
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
