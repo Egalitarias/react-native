@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button, StyleSheet, Text, View } from "react-native";
-import { SetButton, WelcomeText } from "../Components";
+import { SetButton, Padding, WelcomeText } from "../Components";
 import { string } from "prop-types";
 
 const instructions = "Shake for dev menu";
@@ -64,8 +64,11 @@ export default class App extends Component<Props> {
         <WelcomeText>Welcome to React Native!</WelcomeText>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
+        <Padding />
         <SetButton setButtonOnPress={this.setButtonOnPress} />
+        <Padding />
         <Button title="Get" onPress={this.getButtonOnPress} />
+        <Padding />
         <Text>{this.state.message}</Text>
       </View>
     );
