@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
+import { WelcomeText } from "../Components";
 
 const instructions = "Shake for dev menu";
 
@@ -47,7 +48,7 @@ export default class App extends Component<Props> {
         <SomeText text="A line of text" />
         <BigText text="A line of text with bigger font" fontSize={30} />
         <StyledText text="Styled text" style={{ fontSize: 40 }} />
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
+        <WelcomeText>Welcome to React Native!</WelcomeText>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
       </View>
