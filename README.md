@@ -2,6 +2,17 @@
 
 ## Components (26th March 2019) ##
 
+[babeljs.io](https://babeljs.io/repl)
+
+Why use Components
+* Inline JSX, stylesheets and functions gets really complex really quickly, not fun
+* Break up your JSX into managble, reusable components
+* Classes (encapsulate data and functions)
+* Pass in props
+* Each component has its own state (instead of using one monolithic state)
+* Each compoent has its own lifecycle
+* Can agregate components using JSX
+
 Ask for React Native presenters, all are welcome
 
 Checkout the [github repo](https://github.com/Egalitarias/react-native.git)
