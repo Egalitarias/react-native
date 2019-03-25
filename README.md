@@ -2,7 +2,10 @@
 
 ## Components (26th March 2019) ##
 
+Why babel & JSX?  Because it makes writing code easier
+
 [babeljs.io](https://babeljs.io/repl)
+
 
 Why use Components
 * Inline JSX, stylesheets and functions gets really complex really quickly, not fun
