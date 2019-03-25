@@ -18,6 +18,17 @@ cd /src/github/egalitarias/react-native/20190326/basic
 react-native run-android
 ```
 
+### Functional Components ###
+
+[Free Code Camp Functional Components](https://guide.freecodecamp.org/react-native/functional-vs-class-components/)
+
+```
+// Functional Component (no props, no state)
+const Version = () => {
+  return <Text>Version 1.0.1</Text>;
+};
+```
+
 ### Code Snippets ###
 
 Structuring components, index.ts
