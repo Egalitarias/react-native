@@ -18,3 +18,10 @@ cd /src/github/egalitarias/react-native/20190326/basic
 react-native run-android
 ```
 
+### Code Snippets ###
+
+Structuring components, index.ts
+```
+export * from "./WelcomeText";
+export * from "./InstructionText";
+```
