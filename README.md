@@ -2,6 +2,8 @@
 
 ## Components (26th March 2019) ##
 
+Ask for React Native presenters, all are welcome
+
 Checkout the [github repo](https://github.com/Egalitarias/react-native.git)
 
 Open a terminal, run yarn install to install the dependencies, run an emulator and start metro
