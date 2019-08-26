@@ -8,7 +8,7 @@ import {
   View
 } from "react-native";
 import { connect } from "react-redux";
-import { addPlace } from "../../actions/place";
+import { addPlace } from "../Redux/Actions/place";
 import { ListItem } from "../Components";
 
 const instructions = Platform.select({

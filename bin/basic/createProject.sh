@@ -7,11 +7,10 @@ fi
 
 pwd=`pwd`
 scriptPath=`dirname ${0}`
-abs="${pwd}/${scriptPath}"
-src="${abs}/src"
-if [ ! -d "${src}" ]; then 
-    src="${scriptPath}/src"
-fi
+cd "${scriptPath}"
+scriptPath=`pwd`
+cd "${pwd}"
+src="${scriptPath}/src"
 echo "src: [${src}]"
 if [ ! -d "${src}" ]; then
     echo "Cant find ${src} directory, bye"

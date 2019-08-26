@@ -1,8 +1,9 @@
 #!/bin/bash
 
 if [ -e package.json ]; then
-    npm install redux react-redux
-    npm install @types/react-redux
+    yarn add redux react-redux
+    yarn add @types/react-redux
+    yarn add redux-thunk
 else
     echo "Run this script from within a React Native project, bye"
     exit 0
