@@ -240,7 +240,6 @@ export default class NextScreen extends Component {
   }
 
   nextOnPress() {
-    this.props.navigation.navigate(ROUTES.NextScreen);
   }
 
   render() {
