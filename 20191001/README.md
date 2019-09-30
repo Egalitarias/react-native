@@ -335,7 +335,7 @@ const styles = StyleSheet.create({
 });
 ```
 
-App/App.js
+Add NextScreen to the StackNavigator in App/App.js
 ```
 /**
  * Sample React Native App
