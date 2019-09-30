@@ -388,3 +388,16 @@ const App: () => React$Node = () => {
 export default App;
 ```
 
+## Add FinalScreen
+
+* Copy App/Containers/NextScreen.js to App/Containers/FinalScreen.js
+* Change the title to Final in FinalScreen.js
+* Remove the Next button in FinalScreen.js
+* Add FinalScreen to App/Routes.js
+* Add FinalScreen to the StackNavigator in App/App/js
+* Update App/Containers/NextScreen.js nextOnPress() to navigate to FinalScreen
+* Run the App and navigate to FinalScreen; react-native run-ios
+
+
+
+
