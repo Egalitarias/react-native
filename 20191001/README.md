@@ -399,5 +399,25 @@ export default App;
 * Run the App and navigate to FinalScreen; react-native run-ios
 
 
+## iPhone Notch
 
+Add padding for iPhone notch
 
+App/Screen.js
+
+```
+import { Platform } from "react-native";
+
+export function IosNotchPadding() {
+  return Platform.OS === "ios" ? 30 : 0;
+}
+```
+
+Update the screens using:
+```
+import { IosNotchPadding } from "../Screen";
+
+...
+
+    marginTop: IosNotchPadding(),
+```
