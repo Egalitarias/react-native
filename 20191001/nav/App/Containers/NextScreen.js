@@ -1,13 +1,14 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 import {
   Dimensions,
   StyleSheet,
   View,
   Text,
-  TouchableOpacity,
-} from 'react-native';
+  TouchableOpacity
+} from "react-native";
 
-import ROUTES from '../Routes';
+import ROUTES from "../Routes";
+import { IosNotchPadding } from "../Screen";
 
 export default class NextScreen extends Component {
   constructor(props) {
@@ -35,14 +36,16 @@ export default class NextScreen extends Component {
         <View>
           <TouchableOpacity
             style={styles.backButton}
-            onPress={this.backOnPress}>
+            onPress={this.backOnPress}
+          >
             <View style={styles.buttonText}>
               <Text style={styles.buttonFont}>Back</Text>
             </View>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.nextButton}
-            onPress={this.nextOnPress}>
+            onPress={this.nextOnPress}
+          >
             <View style={styles.buttonText}>
               <Text style={styles.buttonFont}>Next</Text>
             </View>
@@ -55,64 +58,65 @@ export default class NextScreen extends Component {
 
 const styles = StyleSheet.create({
   background: {
-    position: 'absolute',
+    position: "absolute",
     marginBottom: 0,
     marginTop: 0,
     padding: 0,
-    width: Dimensions.get('window').width,
-    height: Dimensions.get('window').height,
-    backgroundColor: '#afcfef',
+    width: Dimensions.get("window").width,
+    height: Dimensions.get("window").height,
+    backgroundColor: "#afcfef"
   },
   titleText: {
-    position: 'absolute',
-    width: Dimensions.get('window').width,
-    height: Dimensions.get('window').height * 0.09,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#9fafef',
+    position: "absolute",
+    marginTop: IosNotchPadding(),
+    width: Dimensions.get("window").width,
+    height: Dimensions.get("window").height * 0.09,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#9fafef"
   },
   titleFont: {
     fontSize: 28,
-    fontWeight: 'bold',
-    color: '#000000',
+    fontWeight: "bold",
+    color: "#000000"
   },
   nextButton: {
-    position: 'absolute',
+    position: "absolute",
     padding: 0,
-    marginLeft: Dimensions.get('window').width * 0.76,
-    marginTop: Dimensions.get('window').width * 0.035,
-    width: Dimensions.get('window').width * 0.2,
-    height: Dimensions.get('window').width * 0.1,
-    backgroundColor: '#5f7fef',
+    marginLeft: Dimensions.get("window").width * 0.76,
+    marginTop: IosNotchPadding() + Dimensions.get("window").width * 0.035,
+    width: Dimensions.get("window").width * 0.2,
+    height: Dimensions.get("window").width * 0.1,
+    backgroundColor: "#5f7fef",
     borderRadius: 10,
     elevation: 4,
-    shadowColor: '#000000',
+    shadowColor: "#000000",
     shadowOpacity: 0.5,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center"
   },
   backButton: {
-    position: 'absolute',
+    position: "absolute",
     padding: 0,
-    marginLeft: Dimensions.get('window').width * 0.04,
-    marginTop: Dimensions.get('window').width * 0.035,
-    width: Dimensions.get('window').width * 0.2,
-    height: Dimensions.get('window').width * 0.1,
-    backgroundColor: '#5f7fef',
+    marginLeft: Dimensions.get("window").width * 0.04,
+    marginTop: IosNotchPadding() + Dimensions.get("window").width * 0.035,
+    width: Dimensions.get("window").width * 0.2,
+    height: Dimensions.get("window").width * 0.1,
+    backgroundColor: "#5f7fef",
     borderRadius: 10,
     elevation: 4,
-    shadowColor: '#000000',
+    shadowColor: "#000000",
     shadowOpacity: 0.5,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center"
   },
   buttonText: {
-    color: '#000000',
-    textAlign: 'center',
+    color: "#000000",
+    textAlign: "center"
   },
   buttonFont: {
     fontSize: 20,
-    fontWeight: 'bold',
-    color: '#000000',
-  },
+    fontWeight: "bold",
+    color: "#000000"
+  }
 });
