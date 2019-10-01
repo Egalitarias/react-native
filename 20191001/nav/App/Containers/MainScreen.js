@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     marginTop: IosNotchPadding(),
     width: Dimensions.get("window").width,
-    height: Dimensions.get("window").height * 0.09,
+    height: Dimensions.get("window").width * 0.17,
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#9fafef"
